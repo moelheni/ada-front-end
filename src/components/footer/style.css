@@ -1,0 +1,24 @@
+.main-footer{
+    text-align: center;
+    width: 100%;
+    font-family: "Ubuntu-Light";
+    position: relative ;
+    bottom: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  .main-footer hr{
+    margin-bottom: 30px;
+    width: 200px;
+  }
+  
+  .main-footer span{
+    margin: 0 10px;
+  }
+  
+  .main-footer .fa-heart{
+    color: #c0392b;
+    margin: 0 3px;
+  }
+  

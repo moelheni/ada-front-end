@@ -1,0 +1,317 @@
+.Dashboard{
+
+}
+
+.Dashboard .floating-box{
+  margin: 20px 0;
+  position: relative;
+}
+
+.Dashboard .floating-box.no-padding{
+  padding: 0;
+}
+
+.Dashboard .floating-box header{
+  color: white;
+  padding: 15px;
+  color: white;
+  background: #566067;
+  width: 100%;
+}
+
+.Dashboard .floating-box.less-padding{
+  padding: 10px 20px !important;
+}
+
+.Dashboard .user-picture{
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-color: #34495e;
+}
+
+
+.editProfilHolder{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.editProfil{
+  background-color: white;
+  width: 300px;
+  padding: 15px;
+  margin-top: 50px;
+}
+
+.editProfil .btn{
+  width: 100%;
+}
+
+.editProfileBtn{
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  z-index: 1;
+  cursor: pointer;
+  display: none;
+  color: white;
+}
+
+.profile-card:hover .editProfileBtn{
+  display: block;
+}
+
+.Dashboard .next-badge{
+  margin-top: 16px;
+}
+
+.Dashboard .next-badge h4{
+  font-size: 1em;
+  margin: 0;
+}
+
+.Dashboard .progress{
+  margin-top: 15px;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.Dashboard .floating-box.bottom-padding{
+  padding-bottom: 110px !important; /* override the padding: 0 of no-padding class */
+}
+
+.Dashboard .badges{
+  background-color: #566067;
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.Dashboard .nextCourse h3{
+  font-size: 1.3em;
+}
+
+.Dashboard .circle{
+  background-color: white;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.Dashboard .floating-box-qa{
+  height: 150px;
+  background: transparent;
+}
+
+.Dashboard .question{
+  height: 150px;
+  width: 100%;
+  background-color: #55D6B9;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+  cursor: pointer;
+  transition: all 1.4s;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+
+.Dashboard .row{
+  display: flex;
+}
+
+.Dashboard .floating-box h3{
+  font-family: "Ubuntu-Light";
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.Dashboard .floating-box .continueBtn{
+  position: absolute;
+  right: 0;
+  top:0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 80px;
+  background: #F0676E;
+  border: none;
+  border-radius: 0;
+}
+
+.daily-program-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.daily-program-list li{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-bottom: solid 1px #eee;
+  color: #444;
+}
+
+.instructors-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.instructor-card{
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.instructor-pictures{
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 15px;
+  margin-top: 25px;
+  padding: 15px;
+}
+
+.instructor-pictures p{
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+}
+
+.instructor-picture{
+  height: 100%;
+  width: 90px;
+  background-size:  auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin-bottom: 6px;
+}
+
+
+
+.Dashboard .product-box.floating-box{
+  position: relative;
+  overflow: visible;
+  padding-bottom: 1px !important;
+}
+
+.box-content.box-products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Dashboard .product-box header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Dashboard .product-box header i{
+  cursor: pointer;
+}
+
+.Dashboard .name-product{
+  text-align: center;
+}
+
+.add-product-popup{
+  position: absolute;
+  background-color: white;
+  top: 40px; right: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  z-index: 9;
+  padding: 15px;
+}
+
+.add-product-popup *{
+  width: 100%;
+}
+
+.thumb-picture{
+  width: 150px;
+  margin-top: 15px;
+}
+
+.box-products .item{
+  width: calc(50% - 16px);
+  margin: 8px;
+  height: 150px;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.box-products .item div{
+  z-index: 1;
+}
+
+.box-products .item .progress-product{
+  font-size: .8em;
+}
+
+.update-project, .delete-project{
+  position: absolute;
+  right: 28px;
+  top: 3px;
+  font-size: .8em;
+  display: none;
+}
+
+.delete-project{
+  right: 6px;
+}
+
+.box-products .item:hover .update-project, .box-products .item:hover .delete-project{
+  display: block;
+}
+
+.box-products .layer-black{
+  background: rgba(0, 0, 0, 0.5)
+}
+
+.Dashboard .nextCourse.floating-box h3 {
+  max-width: calc(100% - 69px);
+  line-height: 1.3;
+}
+
+.voucher-box > div{
+  display: flex;
+}
+
+.voucher-box button{
+  margin-left: 5px;
+}

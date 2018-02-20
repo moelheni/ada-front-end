@@ -1,0 +1,65 @@
+.ooops{
+  padding: 60px 0;
+  position: absolute;
+  height: calc(100% - 120px);
+  width: 100%;
+  min-height: 492px;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 60px;
+  left: 0;
+}
+
+.sad-face{
+  font-size: 200px;
+  width: 200px;
+  margin-top: -100px;
+  margin-left: 30px;
+}
+
+.ooopsContent{
+  text-align: left;
+  max-width: calc(100% - 200px);
+}
+
+@media screen and (max-width: 480px){
+  .ooops{
+    flex-direction: column;
+    height: auto;
+    position: relative;
+  }
+  .sad-face{
+    width: 100%;
+    margin-top: 0;
+    margin-left: 20px;
+    text-align: left;
+  }
+  .ooopsContent{
+    text-align: left;
+    max-width: 100%;
+    margin: 0 20px;
+  }
+}
+
+.ooops h1{
+  font-size: 6em;
+  margin-bottom: 20px;
+}
+
+.ooops p{
+  font-size: 1.5em;
+  line-height: 1;
+  margin: 0;
+  font-family: "Ubuntu-Light";
+  color: #999;
+}
+
+.ooops button{
+  margin: 40px 0;
+}
+
+.ooops button i{
+  margin-right: 5px;
+}

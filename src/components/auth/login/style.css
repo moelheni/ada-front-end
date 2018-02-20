@@ -1,0 +1,84 @@
+.floating-box.Login{
+  width: 400px;
+  max-width: 90%;
+  margin-left: calc(50% - 200px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 40px;
+  padding-top: 190px;
+  margin-top: 80px;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+@media screen and (max-width: 447px){
+  .floating-box.Login{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 40px;
+  }
+}
+
+.Login form{
+  width: 100%;
+}
+
+  .Login .Login-header{
+    height: 150px;
+    background: #6AA3E5;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+  }
+
+  .Login > div {
+    width: 100%;
+    text-align: center;
+  }
+
+  .Login button, .Login input, .Login a{
+    width: 100%;
+    margin: 5px 0;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+  }
+
+  .Login input{
+    border: solid 1px #ddd;
+    text-align: left;
+  }
+
+  .btn-success{
+    background-color: #53AF9A;
+  }
+
+  .btn-success:hover{
+    background-color: #53AF9A;
+  }
+
+  .Login .forget-password{
+    color: #696969;
+    font-size: .9em;
+  }
+
+  .Login .btn-primary{
+    background-color: #6AA3E5;
+    font-weight: bold;
+  }
+
+  .Login .register-link{
+  }
+
+
+.btn-link{
+  color: inherit !important;
+}

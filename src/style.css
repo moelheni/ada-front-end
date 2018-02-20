@@ -1,0 +1,353 @@
+/* ----------------------------------------------------------------
+	Font Face
+-----------------------------------------------------------------*/
+@font-face {
+    font-family: Ubuntu-Bold;
+    src: url('/fonts/Ubuntu-Bold.ttf');
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url('/fonts/Ubuntu-Regular.ttf');
+}
+
+@font-face {
+    font-family: Ubuntu-Light;
+    src: url('/fonts/Ubuntu-Light.ttf');
+}
+
+@font-face {
+    font-family: Ubuntu-Medium;
+    src: url('/fonts/Ubuntu-Medium.ttf');
+}
+
+
+
+html{
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+}
+body{
+  background: #F5F5F5;
+  font-family: "Ubuntu";
+  width: 100%;
+  min-height: 100%;
+}
+
+/* GLOBAL */
+.loading{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.loading-horizontal{
+  justify-content: space-between;
+}
+
+.floating-box{
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 20px;
+  margin: 20px;
+}
+
+.floating-row .floating-box:first-child{
+  margin-right: 0;
+}
+
+.floating-row .floating-box:last-child{
+  margin-left: 0;
+}
+
+.box-content{
+  margin: 15px;
+  margin-top: 25px;
+}
+
+.layer-black{
+  position: absolute;
+  z-index: 0 !important;
+  background: radial-gradient(ellipse at center, rgba(125,185,232,0) 0%,rgba(30,87,153,1) 100%);
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: .4;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.no-margin{
+  margin: 0 !important;
+}
+
+.no-padding{
+  padding: 0 !important;
+}
+
+a{
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+      background-position: -1400px
+  }
+  50% {
+      background-position: 0%
+  }
+  100% {
+    background-position: 1400px
+  }
+}
+
+.animated-background {
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: placeHolderShimmer;
+  background: #f6f7f8;
+  background: linear-gradient(to right, #eeeeee 8%, #dddddd 36%, #eeeeee 66%);
+  background-size: 800px 104px;
+  height: 96px;
+  position: relative;
+  margin: 20px 20px 20px 0;
+  border-radius: 4px;
+}
+
+.main-nav{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  color: #979797;
+
+}
+
+  .main-nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .gomycode-title{
+    font-size: 1.3em;
+    font-family: "Ubuntu-Light";
+  }
+
+  .gomycode-title:hover{
+    color: #333;
+  }
+
+  .gomycode-title:hover strong{
+    color: #F0676E;
+  }
+
+  .whole-title{
+
+  }
+
+  .responsive-title{
+    display: none
+  }
+
+  .expand-menu-responsive{
+    display: none;
+  }
+
+  .main-menu{
+    height: 60px;
+  }
+
+  .main-menu > ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 60px;
+  }
+
+    .main-menu > ul > li{
+      margin: 0 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: solid 2px transparent;
+      border-top: solid 2px transparent;
+      transition: all 0.3s;
+    }
+
+    .main-menu > ul > li:last-child{
+      margin-right: 0;
+    }
+
+    .main-menu > ul > li:hover{
+      color: #f0676e;
+      cursor: pointer;
+    }
+
+    .main-menu > ul > li.active{
+      color: #f0676e;
+      border-bottom: solid 2px #f0676e;
+    }
+
+    .main-menu > ul > li i{
+      margin-left: 5px;
+    }
+
+    .main-menu > ul > li a{
+      display: flex;
+      align-items: center;
+    }
+
+    .personImg{
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      background: #5E9FEA;
+      margin-right: 5px;
+      display: none;
+    }
+
+
+.main-menu > i {
+  display: none;
+}
+
+button{
+  cursor: pointer;
+}
+
+.container.menu-container{
+  max-width: 1440px !important;
+}
+
+.container.fullScreen {
+  max-width: 100% !important;
+}
+
+
+@media screen and (max-width: 992px) {
+  .animated-background, .placeholderHolder{
+      width: 100% !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-nav .container{
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .gomycode-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .Login .gomycode-title{
+    justify-content: center;
+  }
+
+  .whole-title{
+    display: none;
+  }
+
+  .responsive-title{
+    display: block
+  }
+
+  .expand-menu-responsive{
+    display: block;
+  }
+
+  .main-menu{
+    position: absolute;
+    background-color: white;
+    height: 100%;
+    top: 0;
+    right: 0;
+    padding: 40px 70px 40px 20px;
+    box-shadow: 3px 4px 20px 0px rgba(0, 0, 0, 0.2);
+    z-index: 999999;
+    transition: all 0.3s;
+    display: none;
+    width: 200px;
+  }
+
+  .main-menu > i {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .main-menu > ul{
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0;
+  }
+
+  .main-menu > ul > li{
+    margin: 15px 0;
+  }
+
+  .main-menu > ul > li.active{
+    border-bottom: none;
+  }
+}
+
+
+pre {
+  display: block;
+  overflow: visible;
+}
+
+*:not(pre) > code {
+  display: inline !important;
+
+}
+
+*:not(pre) > .hljs{
+  padding: 0.2em !important;
+}
+
+pre > code{
+  display: block !important;
+  width: 100%;
+  padding: 15px !important;
+  border-radius: 4px;
+  tab-size: 2 !important;
+}
+
+p > code {
+}
+
+.content a{
+  color: #f0676e !important;
+}
+
+@keyframes spinnerAnimation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.fa-spinner{
+  margin-right: 5px;
+  animation: spinnerAnimation 2s infinite linear;
+}

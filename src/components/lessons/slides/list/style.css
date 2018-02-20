@@ -1,0 +1,45 @@
+ul.SlidesList{
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.lessonSidebar{
+  position: sticky;
+  top: 15px;
+  width: 350px;
+  max-width: 350px;
+  min-width: 350px;
+}
+
+@media screen and (max-width: 992px) {
+  .lessonSidebar{
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0px;
+  }
+}
+
+.lessonSidebar.loading .animated-background{
+  margin-right: 0;
+}
+
+ul.SlidesList li a {
+  color: #BABABA !important;
+  font-size: 1.1em;
+  font-family: "Ubuntu-Light";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+ul.SlidesList i.fa.fa-check-circle{
+  margin-left: 5px;
+}
+
+ul.SlidesList li.active a{
+  color: #f0676e !important;
+  display: flex;
+  align-items: center;
+}

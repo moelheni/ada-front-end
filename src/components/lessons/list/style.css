@@ -1,0 +1,259 @@
+.lesson.floating-box{
+  padding: 0;
+  margin: 20px 0;
+}
+
+.lesson h1{
+  background: linear-gradient(to bottom, rgba(148,223,240,1) 0%,rgba(189,135,218,1) 100%);
+  line-height: 1;
+}
+
+  .lessonName a{
+    color: #9d9d9d;
+    font-size: 1.1em;
+  }
+
+.VerticalViewLessons{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.lessonItemHolder{
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+.right-section > div > div:first-child{
+  margin-bottom: 15px
+}
+
+.lessonName{
+  width: calc(100% - 126px);
+  font-family: "Ubuntu-Light";
+}
+
+.lessonName.clearsides{
+  width: 100%;
+}
+
+.show-more{
+  font-size: 1.2em;
+  margin: 10px 0px 10px 10px;
+  cursor: pointer;
+}
+
+.VerticalViewLessons .lesson{
+  position: relative;
+  margin-right: 20px;
+  padding: 30px 20px;
+  padding-bottom: 60px;
+  overflow: hidden;
+  width: calc(100% / 3 - 20px);
+}
+
+.VerticalViewLessons .lesson:last-child{
+  margin-right: 0px;
+}
+
+.VerticalViewLessons .lesson .progress-contenue{
+  display: none;
+}
+
+.VerticalViewLessons .bottom-title{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  background: #6AA3E5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.VerticalViewLessons .bottom-title h1{
+  font-size: 1em;
+  margin: 0;
+}
+
+.VerticalViewLessons .lessonName{
+  border-radius: 2px;
+  padding: 7px 10px;
+  margin-bottom: 5px;
+}
+
+.HorizontalViewLessons .lesson{
+  position: relative;
+  padding: 0;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  .HorizontalViewLessons .lesson .left-section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 40px;
+    background: #6AA3E5;
+  }
+
+    .HorizontalViewLessons .lesson .left-section > div{
+      transform: rotate(-90deg);
+      color: white;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+  .HorizontalViewLessons .lesson .right-section{
+    padding: 0;
+    padding-left: 45px;
+    width: 100%
+  }
+
+.progress-contenue{
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.progress-contenue a{
+  font-size: .9em;
+  font-family: "Ubuntu-Light";
+  font-weight: normal;
+}
+
+.LessonsList .lessonItemWrapper:last-child{
+  border-bottom: none;
+}
+
+.lessonItemWrapper{
+  position: relative;
+  padding: 15px;
+  border-bottom: solid 1px #eee;
+}
+
+.lessonItemWrapper *{
+  z-index: 1;
+}
+
+.lessonItemHolder{
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.progressHolder{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.progressHolder span{}
+
+.progress{
+  width: 500px;
+  max-width: calc(95% - 54px);
+  background: #EEE;
+  height: 10px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.percent-title{
+  margin-left: 10px;
+}
+
+.lessonItemHolder .progress{
+}
+
+.progress > div{
+  height: 20px;
+  opacity: .5;
+}
+
+.SwitchButton{
+    display: flex;
+    height: 20px;
+    width: 100px;
+    border-radius:  2px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.SwitchButton > div{
+    height: 100%;
+    width: 50px;
+    background: white;
+    z-index: -1;
+}
+
+.switchHoler{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+  font-family: "Ubuntu-Light"
+}
+
+.btn-continue{
+  background-color: #F0676E !important;
+  border: none !important;
+  outline: none !important;
+  font-family: "Ubuntu-Light"
+}
+
+
+
+.slides-list{
+  margin-bottom: 0;
+  padding-left: 15px;
+  padding-top: 20px;
+  margin-top: 15px;
+  padding-bottom: 20px;
+  background-color: #F3F3F3;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  max-width: calc(100% - 4px);
+}
+
+.slide-item{
+  display: flex;
+  align-items: center;
+}
+
+.slide-item a{
+  color: inherit;
+  font-family: "Ubuntu-Light";
+}
+
+.slide-item i{
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  color: #AEAEAE;
+}
+
+i.fa.fa-check-circle{
+  color: #AAD47D;
+}
+
+@media screen and (max-width: 768px){
+  .VerticalViewLessons .lesson{
+    width: 100%;
+    margin-right: 0px;
+  }
+  .lessonItemWrapper{
+    padding: 10px 0;
+  }
+}

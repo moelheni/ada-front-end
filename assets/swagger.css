@@ -1,0 +1,10 @@
+﻿.swagger-section #header {
+    background-color: black !important;
+}
+#select_document,
+.swagger-section #auth_container .authorize__btn, .swagger-section #explore {
+    background-color: #be1e32 !important;
+}
+    .swagger-section #auth_container .authorize__btn:hover, .swagger-section #explore:hover {
+        background-color: #444 !important;
+    }

@@ -1,0 +1,162 @@
+.LessonItem{
+  margin-top: 5px;
+  display: flex;
+}
+
+li.active{
+  color: blue;
+}
+
+.titleValue{
+  width: calc(100% - 90px);
+}
+
+.LessonItemMain{
+  width: calc(100% - 350px);
+  min-width: calc(100% - 350px);
+  max-width: calc(100% - 350px);
+}
+
+.LessonItemMain .floating-box{
+  margin-left: 0;
+}
+
+.lessonTitle{
+  height: auto;
+  padding: 20px;
+  padding-right: 0px !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.playBtn{
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  background: #F0676E;
+  color: white;
+}
+
+.floating-box.lessonContent{
+  padding: 0px;
+}
+
+.lessonContent > header{
+  background: #566067;
+  height: 50px;
+  color: white;
+  padding:  0 20px;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.lessonContentValue{
+  padding: 20px;
+}
+
+.lessonContentValue p{
+  font-family: "Ubuntu-Light"
+}
+
+.lessonContentValue img{
+  max-width: 100% !important;
+  margin: 10px 0;
+}
+
+.lessonContentValue iframe{
+  width: 100% !important;
+  height: 400px;
+  margin: 20px 0;
+}
+
+.codesandbox-row .lessonContentValue iframe{
+  width: 100% !important;
+  height: 300px;
+}
+
+@media screen and (min-width: 1160px){
+  .lessonContentValue iframe{
+    width: 100% !important;
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: 1360px){
+  .lessonContentValue iframe{
+    width: 100% !important;
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .lessonContentValue iframe{
+    max-width: 100% !important;
+    min-width: auto;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .lessonContentValue iframe{
+    max-width: 100% !important;
+    min-width: auto;
+  }
+}
+
+.floating-box.lessonSidebar{
+  margin-left: 0;
+  width: 350px;
+  max-width: 350px;
+  min-width: 350px;
+}
+
+.NextBtnHolder{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.NextBtn{
+  background: #f0676e;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 1.2em;
+  display: flex;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.NextBtn i {
+  margin-left: 15px;
+}
+
+.lessonSidebar.floating-box{
+}
+
+.lessonTitle{
+  font-size: 1.1rem;
+  color: #f0676e;
+}
+
+.lessonTitle span{
+  color: #AEAEAE;
+}
+
+  .lessonTitle span a{
+    color: inherit;
+  }

@@ -1,0 +1,146 @@
+.TracksList{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.loading.TracksList{
+  justify-content: space-between;
+}
+
+.TracksList .floating-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 20px 0;
+  width: calc(50% - 20px);
+}
+
+@media screen and (max-width: 993px) {
+  .TracksList .floating-box{
+    width: 100% !important;
+  }
+}
+
+.track-name{
+  height: 218px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.1em;
+  color: white;
+  position: relative;
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+  background-size:  cover;
+  background-position: center;
+  text-transform: uppercase;
+}
+
+.track-name *{
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.TracksList li {
+    list-style: none;
+    padding: 10px;
+    color: #444;
+    border-left: solid 1px #ddd;
+    transition: all 0.3;
+    margin: 10px 0;
+}
+
+.TracksList .floating-box li:first-child{
+  border-left: none;
+
+}
+
+.TracksList li.locked *{
+  color: #aaa;
+  cursor: no-drop;
+}
+
+.TracksList li.locked:hover{
+  color: #aaa;
+}
+
+.TracksList li:hover{
+  color: #f0676e;
+}
+
+  .TracksList li:hover .percent{
+    color: #f0676e;
+  }
+
+  .TracksList li.locked:hover .percent{
+    color: #aaa;
+  }
+
+.TracksList li a{
+  color: inherit;
+  display: flex;
+  align-items: center;
+  text-decoration: inherit;
+}
+
+@media screen and (max-width: 668px) {
+  .TracksList li a{
+    font-size: .7em;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .TracksList li a{
+    font-size: .5em;
+  }
+}
+
+.TracksList li a i{
+  margin-left: 10px;
+}
+
+.TracksList li a span{
+  font-size: 1.2em;
+  margin-right: 5px;
+}
+
+.sub-tracks{
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.TracksList .floating-box h2{
+  font-size: 1.3em;
+  margin: 0;
+  margin-right: 15px;
+  font-family: "Ubuntu-Light";
+  font-weight: normal;
+}
+
+
+
+.percent{
+  font-family: "Ubuntu-Light";
+  color: #666;
+  line-height: 1;
+}
+
+.subTrack-name{
+  margin-right: 5px;
+}
+
+.subTrack-level{
+  margin-right: 5px;
+  font-size: 1.4em;
+  line-height: 1;
+}
+.subTrack-level span{
+  font-size: 2em !important;
+}
