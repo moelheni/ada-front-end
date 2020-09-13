@@ -18,7 +18,7 @@
     "express": "^4.16.2",
     "logan": "0.0.2",
     "mongod": "^2.0.0",
-    "mongodb": "^3.0.0-rc0",
+    "mongodb": "^3.1.13",
     "morgan": "^1.9.0",
     "node-sass": "^4.5.3",
     "prop-types": "^15.6.0",
